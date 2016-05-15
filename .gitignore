@@ -35,3 +35,6 @@
 
 # build folder
 build/
+
+# ycm temporary files
+*.pyc
