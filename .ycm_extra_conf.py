@@ -53,8 +53,7 @@ flags = [
 '-isystem', '/System/Library/Frameworks/Python.framework/Headers',
 '-isystem', '../llvm/include',
 '-isystem', '../llvm/tools/clang/include',
-'-I', './src',
-'-I', './test',
+'-I', './include',
 '-I', './googletest/googletest/include',
 ]
 
