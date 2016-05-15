@@ -55,6 +55,7 @@ flags = [
 '-isystem', '../llvm/tools/clang/include',
 '-I', './src',
 '-I', './test',
+'-I', './googletest/googletest/include',
 ]
 
 
