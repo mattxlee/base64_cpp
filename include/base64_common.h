@@ -5,7 +5,7 @@
 #include <utility>
 #include <stdexcept>
 
-#define NS_BASE64_BEGIN namespace base64 {
+#define NS_BASE64_BEGIN namespace b64 {
 #define NS_BASE64_END }
 
 NS_BASE64_BEGIN

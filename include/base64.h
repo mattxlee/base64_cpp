@@ -6,6 +6,7 @@
 #include <utility>
 
 #include "base64_common.h"
+#include "base64_conv.h"
 
 NS_BASE64_BEGIN
 
@@ -105,7 +106,6 @@ template <typename Base64Converter> class base64 {
     Base64Converter conv_;
 };
 
-#include "base64_conv.h"
 typedef base64<base64_conv> base64_codec;
 
 NS_BASE64_END
