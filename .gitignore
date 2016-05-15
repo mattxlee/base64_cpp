@@ -26,3 +26,12 @@
 *.exe
 *.out
 *.app
+
+# macosx unused files
+.DS_Store
+
+# vi swap files
+*.swp
+
+# build folder
+build/
