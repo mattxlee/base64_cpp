@@ -9,6 +9,14 @@ include_directories("./include" "./googletest/googletest" "./googletest/googlete
 file(GLOB base64_src "./src/*.cpp")
 file(GLOB test_src "./test/*.cpp")
 
+add_library(base64_cpp ${base64_src})
+
 file(GLOB googletest_src "./googletest/googletest/src/gtest-all.cc" "./googletest/googletest/src/gtest_main.cc")
 
 add_executable(base64_test ${base64_src} ${test_src} ${googletest_src})
+
+file(GLOB base64_inc "./include/*.h")
+
+install(FILES ${base64_inc} DESTINATION include/base64_cpp)
+
+install(TARGETS base64_cpp DESTINATION lib)
