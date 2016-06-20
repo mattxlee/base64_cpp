@@ -15,6 +15,8 @@ file(GLOB googletest_src "./googletest/googletest/src/gtest-all.cc" "./googletes
 
 add_executable(base64_test ${base64_src} ${test_src} ${googletest_src})
 
+target_link_libraries(base64_test pthread)
+
 file(GLOB base64_inc "./include/*.h")
 
 install(FILES ${base64_inc} DESTINATION include/base64_cpp)
