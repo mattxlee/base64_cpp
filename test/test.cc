@@ -3,8 +3,6 @@
 
 #include "base64.h"
 
-b64::base64_codec _codec;
-
 #define STRING_SOURCE                                                                                                  \
     "Man is distinguished, not only by his reason, but by this singular passion from other animals, which is a lust "  \
     "of the mind, that by a perseverance of delight in the continued and indefatigable generation of knowledge, "      \
@@ -19,11 +17,11 @@ b64::base64_codec _codec;
 
 TEST(base64_test, to_base64)
 {
-    EXPECT_EQ(STRING_BASE64, _codec.encode(STRING_SOURCE, strlen(STRING_SOURCE)));
+    EXPECT_EQ(STRING_BASE64, base64::Encode(STRING_SOURCE, strlen(STRING_SOURCE)));
 }
 
 TEST(base64_test, from_base64)
 {
-    auto _buff = _codec.decode(STRING_BASE64);
+    auto _buff = base64::Decode(STRING_BASE64);
     EXPECT_EQ(0, std::memcmp(_buff.first.get(), STRING_SOURCE, strlen(STRING_SOURCE)));
 }

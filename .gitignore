@@ -38,3 +38,11 @@ build/
 
 # ycm temporary files
 *.pyc
+
+# CMake temporary files
+CMakeCache.txt
+CMakeFiles/
+Makefile
+base64_test
+cmake_install.cmake
+install_manifest.txt

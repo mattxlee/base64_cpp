@@ -6,8 +6,8 @@ add_definitions(-std=c++11)
 
 include_directories("./include" "./googletest/googletest" "./googletest/googletest/include")
 
-file(GLOB base64_src "./src/*.cpp")
-file(GLOB test_src "./test/*.cpp")
+file(GLOB base64_src "./src/*.cc")
+file(GLOB test_src "./test/*.cc")
 
 add_library(base64_cpp ${base64_src})
 
