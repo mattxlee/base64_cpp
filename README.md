@@ -2,7 +2,7 @@
 This is a base64 convert library writting in c++.
 
 ## How to use
-Add "base64.h" to your include list
+Add `<base64_cpp/base64.h>` to your include list
 ```
 #include <base64_cpp/base64.h>
 ```
@@ -24,7 +24,7 @@ cmake . && make
 ```
 
 ## Install library
-Library will be installed to /usr/local/include/base64_cpp/
+Library will be installed to `/usr/local/include/base64_cpp/`
 ```
 cmake . && make && make install
 ```
