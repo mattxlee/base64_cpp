@@ -1,1 +1,2 @@
+script: cmake . && make && make install
 language: cpp
