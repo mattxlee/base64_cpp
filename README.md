@@ -1,4 +1,4 @@
-# A simple base64 convert c++ library
+# A simple base64 convert c++ library [![Build Status](https://travis-ci.org/mattxlee/base64_cpp.svg?branch=master)](https://travis-ci.org/mattxlee/base64_cpp)
 This is a base64 convert library writting in c++.
 
 ## How to use
