@@ -1,2 +1,3 @@
-script: cmake . && make && make install
+script: cmake . && make
 language: cpp
+compiler: clang
